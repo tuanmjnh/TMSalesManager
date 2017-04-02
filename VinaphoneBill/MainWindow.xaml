@@ -1,0 +1,91 @@
+﻿<Window x:Class="VinaphoneBill.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VinaphoneBill"
+        xmlns:fa="http://schemas.fontawesome.io/icons/"
+        mc:Ignorable="d"
+        Title="MainWindow" Icon="{StaticResource ResourceKey=MainIcon}" Width="{DynamicResource {x:Static SystemParameters.FullPrimaryScreenWidthKey}}" Height="{DynamicResource {x:Static SystemParameters.FullPrimaryScreenHeightKey}}">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="15*"/>
+            <RowDefinition Height="323*"/>
+        </Grid.RowDefinitions>
+        <DockPanel x:Name="dpLeft" Height="{DynamicResource {x:Static SystemParameters.FullPrimaryScreenHeightKey}}" LastChildFill="False" VerticalAlignment="Top" Width="{DynamicResource {x:Static SystemParameters.FullPrimaryScreenWidthKey}}">
+            <Menu x:Name="MenuLeft" DockPanel.Dock="Top" Background="White" Height="28">
+                <MenuItem x:Name="MenuConfigCommon" Header="Tệp" Padding="5">
+                    <!--<MenuItem.Icon>
+                        <fa:ImageAwesome Icon="Navicon" Foreground="#00a9ec"/>
+                    </MenuItem.Icon>-->
+                    <MenuItem x:Name="MenuConfigSetting" Header="ConfigSetting" Click="MenuConfigSetting_Click">
+                        <MenuItem.Icon>
+                            <fa:ImageAwesome Icon="Cog" Foreground="#00a9ec" Width="16"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem x:Name="MenuConfigShutdown" Header="ConfigShutdown" Click="MenuConfigShutdown_Click">
+                        <MenuItem.Icon>
+                            <fa:ImageAwesome Icon="PowerOff" Foreground="#00a9ec" Width="16"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                </MenuItem>
+                <MenuItem Header="Internet" Padding="5">
+                    <!--<MenuItem.Icon>
+                        <fa:ImageAwesome Icon="Chrome" Foreground="#00a9ec"/>
+                    </MenuItem.Icon>-->
+
+                    <MenuItem x:Name="MenuFiber" Header="_Fiber" Click="MenuFiber_Click">
+                        <MenuItem.Icon>
+                            <fa:ImageAwesome Icon="PlusCircle" Foreground="#00a9ec" Width="16"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem x:Name="MenuMegaVNN" Header="_Mega" Click="MenuMega_Click">
+                        <MenuItem.Icon>
+                            <fa:ImageAwesome Icon="ListAlt" Foreground="#00a9ec" Width="16"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                </MenuItem>
+                <MenuItem x:Name="MenuAbout" Header="_Giới thiệu" Padding="5">
+                    <!--<MenuItem.Icon>
+                        <fa:ImageAwesome Icon="InfoCircle" Foreground="#00a9ec"/>
+                    </MenuItem.Icon>-->
+
+                    <MenuItem x:Name="MenuAboutCommon" Header="_Tổng quan" Click="MenuAboutCommon_Click">
+                        <MenuItem.Icon>
+                            <fa:ImageAwesome Icon="Wpforms" Foreground="#00a9ec" Width="16"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem x:Name="MenuAboutRegister" Header="_Đăng ký" Click="MenuAboutRegister_Click">
+                        <MenuItem.Icon>
+                            <fa:ImageAwesome Icon="Registered" Foreground="#00a9ec" Width="16"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem x:Name="MenuAboutContact" Header="_Liên hệ" Click="MenuAboutContact_Click">
+                        <MenuItem.Icon>
+                            <fa:ImageAwesome Icon="Superpowers" Foreground="#00a9ec" Width="16"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                </MenuItem>
+            </Menu>
+        </DockPanel>
+        <!--<Label x:Name="lblTitle" Content="lblTitle" HorizontalAlignment="Left" Margin="10,30,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
+        <Label x:Name="lblMessage" Content="lblMessage" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top"/>-->
+        <StackPanel x:Name="stackContent" Margin="10,0,10,83" Grid.Row="1">
+        </StackPanel>
+        <ProgressBar Height="32" VerticalAlignment="Bottom" Margin="10,0,773,46" Grid.Row="1" Foreground="#FF157FBB">
+            <ProgressBar.BorderBrush>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="White" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </ProgressBar.BorderBrush>
+            <ProgressBar.Background>
+                <LinearGradientBrush EndPoint="1,0" StartPoint="0,0">
+                    <GradientStop Color="White" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                    <GradientStop Color="White" Offset="0.5"/>
+                </LinearGradientBrush>
+            </ProgressBar.Background>
+        </ProgressBar>
+    </Grid>
+</Window>

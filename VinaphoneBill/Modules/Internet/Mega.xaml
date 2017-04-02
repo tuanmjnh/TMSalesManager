@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="VinaphoneBill.Modules.Internet.Mega"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:VinaphoneBill.Modules.Internet"
+             mc:Ignorable="d" Width="500" Height="300">
+    <Grid>
+        <Label Content="Tháng năm" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtTime" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalContentAlignment="Center" VerticalAlignment="Top" Width="120" Margin="0,26,0,0"/>
+        
+        <Label Content="Cước sử dụng" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,60,0,0"/>
+        <TextBox x:Name="txtCuocSD" Text="150000" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalContentAlignment="Center" VerticalAlignment="Top" Width="120" Margin="0,91,0,0"/>
+        
+        <Button x:Name="btnProcessing" Content="Xử lý" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Height="35" Margin="425,255,0,0" Click="btnProcessing_Click"/>
+    </Grid>
+</UserControl>

@@ -1,0 +1,10 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Style x:Key="FocusTextBox" TargetType="Grid">
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding ElementName=textBoxName, Path=IsVisible}" Value="True">
+                <Setter Property="FocusManager.FocusedElement" Value="{Binding ElementName=textBoxName}"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+</ResourceDictionary>

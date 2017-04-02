@@ -1,0 +1,35 @@
+﻿<UserControl x:Class="TMSalesManager.ModuleAuth.About"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:TMSalesManager.ModuleAuth"
+             mc:Ignorable="d" Width="550" Height="390">
+    <Grid>
+        <Label x:Name="lblUsername" Content="lblUsername" Margin="10,10,10,210"></Label>
+        <GroupBox Header="Thông tin cơ bản" Margin="10,50,10,169">
+            <StackPanel>
+                <Label x:Name="lblFullName" HorizontalContentAlignment="Right" Content="lblFullName" Margin="0,10,430,0"/>
+                <TextBox x:Name="txtFullName" Margin="100,-25,30,0" VerticalContentAlignment="Center"></TextBox>
+                <Label x:Name="lblMobile" HorizontalContentAlignment="Right" Content="lblMobile" Margin="0,10,430,0"/>
+                <TextBox x:Name="txtMobile" Margin="100,-25,30,0" VerticalContentAlignment="Center"></TextBox>
+                <Label x:Name="lblEmail" HorizontalContentAlignment="Right" Content="lblEmail" Margin="0,10,430,0"/>
+                <TextBox x:Name="txtEmail" Margin="100,-25,30,0" VerticalContentAlignment="Center"></TextBox>
+                <Label x:Name="lblAddress" HorizontalContentAlignment="Right" Content="lblAddress" Margin="0,10,430,0"/>
+                <TextBox x:Name="txtAddress" Margin="100,-25,30,0" VerticalContentAlignment="Center"></TextBox>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Header="Thông tin chi tiết" Margin="10,237,10,42">
+            <StackPanel>
+                <Label x:Name="lblRoles" Content="lblRoles" Margin="10,10,258,0"/>
+                <Label x:Name="lblFlag" Content="lblFlag" Margin="268,-26,10,0"/>
+                <Label x:Name="lblCreatedBy" Content="lblCreatedBy" Margin="10,0,258,0"/>
+                <Label x:Name="lblCreatedAt" Content="lblCreatedAt" Margin="268,-26,10,0"/>
+                <Label x:Name="lblUpdatedBy" Content="lblUpdatedBy" Margin="10,0,258,0"/>
+                <Label x:Name="lblUpdatedAt" Content="lblUpdatedAt" Margin="268,-26,10,0"/>
+            </StackPanel>
+        </GroupBox>
+        <Button x:Name="btnUpdate" Content="btnUpdate" HorizontalAlignment="Left" Margin="366,360,0,0" VerticalAlignment="Top" Width="75" Click="btnUpdate_Click"/>
+        <Button x:Name="btnCancel" Content="btnCancel" HorizontalAlignment="Left" Margin="465,360,0,0" VerticalAlignment="Top" Width="75" Click="btnCancel_Click"/>
+    </Grid>
+</UserControl>
