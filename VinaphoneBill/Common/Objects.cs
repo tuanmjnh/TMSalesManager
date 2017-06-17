@@ -16,6 +16,7 @@ namespace Common
     public class Directories
     {
         public const string data = "DATA/";
+        public const string tools = data + "Tools/";
         public const string images = "Uploads/Images/";
         public const string imagesProduct = images + "Product/";
         public const string imagesCustomer = images + "Customer/";

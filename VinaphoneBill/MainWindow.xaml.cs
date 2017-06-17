@@ -128,6 +128,13 @@ namespace VinaphoneBill
             }
         }
         #endregion
+        #region Tools
+        private void RemoveDuplicate_Click(object sender, RoutedEventArgs e)
+        {
+            this.stackContent.Children.Clear();
+            this.stackContent.Children.Add(new Modules.Tools.RemoveDuplicate());
+        }
+        #endregion
         #region About
         private void MenuAboutCommon_Click(object sender, RoutedEventArgs e)
         {

@@ -45,6 +45,16 @@
                         </MenuItem.Icon>
                     </MenuItem>
                 </MenuItem>
+                <MenuItem Header="Tools" Padding="5">
+                    <!--<MenuItem.Icon>
+                        <fa:ImageAwesome Icon="Chrome" Foreground="#00a9ec"/>
+                    </MenuItem.Icon>-->
+                    <MenuItem x:Name="RemoveDuplicate" Header="_Mega" Click="RemoveDuplicate_Click">
+                        <MenuItem.Icon>
+                            <fa:ImageAwesome Icon="Remove" Foreground="#00a9ec" Width="16"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                </MenuItem>
                 <MenuItem x:Name="MenuAbout" Header="_Giới thiệu" Padding="5">
                     <!--<MenuItem.Icon>
                         <fa:ImageAwesome Icon="InfoCircle" Foreground="#00a9ec"/>
